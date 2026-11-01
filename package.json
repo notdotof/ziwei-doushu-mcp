@@ -1,0 +1,26 @@
+{
+  "name": "ziwei-doushu-mcp",
+  "version": "1.2.0",
+  "description": "紫微斗数 MCP 服务：排盘、解读资料包、开源数据集深度解读、天纪/古籍检索（基于倪海厦《天纪》体系，轻量单文件分发）",
+  "private": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "tsx scripts/regression/pan-integrity.test.ts && tsx scripts/regression/dst-cn.test.ts && tsx scripts/regression/clock-adjust.test.ts && tsx scripts/regression/sizhu-lichun-boundary.test.ts && tsx scripts/regression/hongluan-tianxi.test.ts && tsx scripts/regression/famous-hour-consistency.test.ts && tsx scripts/regression/solar-date-exists.test.ts && tsx scripts/regression/natal-dual-sihua-same-palace.test.ts && tsx scripts/regression/neutral-naming.test.ts && tsx scripts/regression/interpretation-pack.test.ts && tsx scripts/regression/mcp-birth-resolve.test.ts && tsx scripts/regression/dataset-lookup.test.ts",
+    "build:mcp": "node scripts/build-mcp.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "iztro": "^2.5.8",
+    "lunar-javascript": "^1.7.3",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4.19.0",
+    "typescript": "^5"
+  }
+}

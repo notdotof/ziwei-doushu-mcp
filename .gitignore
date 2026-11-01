@@ -1,0 +1,18 @@
+# dependencies
+node_modules/
+
+# dataset（安装/解压的数据，不属于源码）
+data/
+
+# 构建产物与分发
+_mcp_dist/
+agent-server/
+*.tsbuildinfo
+
+# 本地环境（API key 等）
+.env*
+!.env.example
+
+# 系统杂项
+.DS_Store
+Thumbs.db
