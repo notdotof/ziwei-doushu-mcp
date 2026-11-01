@@ -4,6 +4,23 @@
   "description": "紫微斗数 MCP 服务：排盘、解读资料包、开源数据集深度解读、天纪/古籍检索（基于倪海厦《天纪》体系，轻量单文件分发）",
   "private": false,
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notdotof/ziwei-doushu-mcp.git"
+  },
+  "homepage": "https://github.com/notdotof/ziwei-doushu-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/notdotof/ziwei-doushu-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ziwei-doushu",
+    "astrology",
+    "tianji",
+    "紫微斗数",
+    "天纪"
+  ],
   "engines": {
     "node": ">=20"
   },
