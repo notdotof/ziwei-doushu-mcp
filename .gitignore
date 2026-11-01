@@ -2,7 +2,7 @@
 node_modules/
 
 # dataset（安装/解压的数据，不属于源码）
-data/
+/data/
 
 # 构建产物与分发
 _mcp_dist/
