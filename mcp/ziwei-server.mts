@@ -41,6 +41,12 @@ server.registerTool(
     title: '紫微斗数排盘',
     description: '按公历出生时间排紫微斗数命盘，返回十二宫星曜、四化、大限与基本信息。可自动做真太阳时校正。',
     inputSchema: birthShape,
+    annotations: {
+      readOnlyHint: true,
+      destructiveHint: false,
+      idempotentHint: true,
+      openWorldHint: false,
+    },
   },
   async (args) => {
     try {
@@ -66,6 +72,12 @@ server.registerTool(
       ...birthShape,
       question: z.string().min(2).describe('想解读的问题，例如：看看命格和各宫吉凶'),
     },
+    annotations: {
+      readOnlyHint: true,
+      destructiveHint: false,
+      idempotentHint: true,
+      openWorldHint: false,
+    },
   },
   async (args) => {
     try {
@@ -90,6 +102,12 @@ server.registerTool(
       ...birthShape,
       dims: z.array(z.enum(DIM_KEYS)).min(1).max(13).optional().describe(
         `要返回的维度，默认 ["overview"]。可选：${DIM_KEYS.map((k) => `${k}(${DIM_LABELS[k]})`).join('、')}`),
+    },
+    annotations: {
+      readOnlyHint: true,
+      destructiveHint: false,
+      idempotentHint: true,
+      openWorldHint: false,
     },
   },
   async ({ dims, ...birth }: BirthArgs & { dims?: DimKey[] }) => {
@@ -148,6 +166,12 @@ server.registerTool(
       years: z.array(z.number().int().min(1950).max(2026)).min(1).max(77).describe(
         '要安装的公历年份列表，如 [1990, 1998, 1999]；数据集覆盖 1950–2026'),
     },
+    annotations: {
+      readOnlyHint: false,
+      destructiveHint: false,
+      idempotentHint: true,
+      openWorldHint: true,
+    },
   },
   async ({ years }: { years: number[] }) => {
     if (!canDecompressNatively()) {
@@ -188,6 +212,12 @@ server.registerTool(
     inputSchema: {
       query: z.string().min(1).describe('检索词，如 紫微、化忌、夫妻、杀破狼、禄存'),
       limit: z.number().int().min(1).max(30).optional().describe('每类最多返回条数，默认 8'),
+    },
+    annotations: {
+      readOnlyHint: true,
+      destructiveHint: false,
+      idempotentHint: true,
+      openWorldHint: false,
     },
   },
   async ({ query, limit = 8 }) => {
