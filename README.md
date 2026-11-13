@@ -4,7 +4,7 @@
 
 ### 紫微斗数 MCP · 通用智能体接入 · 轻量单文件
 
-[![M8ven Score](https://m8ven.ai/badge/mcp/notdotof/ziwei-doushu-mcp)](https://m8ven.ai/mcp/notdotof/ziwei-doushu-mcp?s=readme)
+[![M8ven Score](https://m8ven.ai/badge/mcp/notdotof-ziwei-doushu-mcp-uf1v39?v=d9bfa96c45a4849147fcff056e5fd954)](https://m8ven.ai/mcp/notdotof-ziwei-doushu-mcp-uf1v39?s=readme)
 
 排盘 / 解读资料包 / 数据集深度解读 / 《天纪》与古籍检索 —— 本地运行，不调用任何在线模型
 

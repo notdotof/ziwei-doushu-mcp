@@ -1,6 +1,6 @@
 # ziwei-doushu-mcp
 
-[![M8ven Score](https://m8ven.ai/badge/mcp/notdotof/ziwei-doushu-mcp)](https://m8ven.ai/mcp/notdotof/ziwei-doushu-mcp?s=readme)
+[![M8ven Score](https://m8ven.ai/badge/mcp/notdotof-ziwei-doushu-mcp-uf1v39?v=d9bfa96c45a4849147fcff056e5fd954)](https://m8ven.ai/mcp/notdotof-ziwei-doushu-mcp-uf1v39?s=readme)
 
 A lightweight, local-first **MCP (Model Context Protocol) server** for Zi Wei Dou Shu (Purple Star Astrology), built on the open-source engine [Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu) (Ni Haixia "Tian Ji" school).
 
